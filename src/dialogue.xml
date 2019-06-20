@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Template:
+  <dialogue>
+    <choices>
+      <choice></choice>
+    </choices>
+    <text></text>
+    <branches></branches>
+  </dialogue>
+
+New line: 
+  &#10;&#13;
+Space:
+  &#32;
+Tab:
+  &#09;
+-->
+
+<dialogue>
+  <text>
+    Who... Who are you?!
+  </text>
+  <choices>
+    <choice>I am Zmurf, king of the human realm.</choice>
+    <choice>Silence foul creature! I'm the one asking questions here.</choice>
+  </choices>
+  <branches>
+
+    <dialogue>
+      <text>
+        What are you doing here then?&#10;&#13;
+        This is no place for humans.&#10;&#13;
+        Usually my kind eat you lot for breakfast, but you don't look very tasty...
+      </text>
+      <choices>
+        <choice>
+            I was captured by my arch enemy Yeetus when I tried to steal his "Ruby of Ultimate Power" (TM).&#10;&#13;
+            &#32;&#32;&#32;&#32;&#32;I know the Ruby's close, I just need to escape this cell.
+        </choice>
+      </choices>
+      <branches>
+
+        <dialogue>
+          <text>
+            Well that's quite a story!&#10;&#13;
+            I think I saw a key lying around.&#10;&#13;   
+            You should consider staying though.&#10;&#13;
+            The view from this window is amazing!&#10;&#13;
+            &#10;&#13;
+            * You walk away *
+          </text>
+          <choices></choices>
+          <branches></branches>
+        </dialogue>
+
+      </branches>
+    </dialogue>
+
+    <dialogue>
+      <text>
+        * The creature slaps you with a slimey hand *&#10;&#13;
+        No manners I see.&#10;&#13;
+        Leave me now before I eat you!&#10;&#13;
+        &#10;&#13;
+        * You hurry away *
+      </text>
+      <choices></choices>
+      <branches></branches>
+    </dialogue>
+
+  </branches>
+</dialogue>
