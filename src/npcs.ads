@@ -21,7 +21,6 @@ package NPCs is
    
 private
    
-   procedure Clear_Input_Buffer;
    procedure Print_Choices(Options: Text_Vector.Vector);
 
 end NPCs;

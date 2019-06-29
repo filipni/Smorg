@@ -3,16 +3,6 @@ use Ada.Text_IO;
 
 package body NPCs is
    
-   procedure Clear_Input_Buffer is
-      Ch: Character;
-      More: Boolean;
-   begin
-      loop
-         Get_Immediate(Ch, More);
-         exit when not More;
-      end loop;
-   end Clear_Input_Buffer;
-   
    procedure Print_Choices(Options: Text_Vector.Vector) is
    begin
       for I in Options.First_Index .. Options.Last_Index loop
@@ -46,7 +36,7 @@ package body NPCs is
             if Input in '1'..'9' then
                Choice := Integer'Value((1 => Input)); -- Convert Character to String, and then String to Integer.
             end if;
-            Clear_Input_Buffer;
+            Skip_Line;
             New_Line;
          end loop;
          
