@@ -1,4 +1,4 @@
-with Entities, Items, Ada.Strings.Unbounded, Dialogue_Tree, Ada.Containers.Hashed_Maps, Items;
+with Entities, Items, Ada.Strings.Unbounded, Ada.Strings.Unbounded.Hash, Dialogue_Tree, Ada.Containers.Hashed_Maps, Items;
 use Entities, Items, Ada.Strings.Unbounded, Dialogue_Tree, Ada.Containers, Items;
 
 package NPCs is
@@ -12,7 +12,7 @@ package NPCs is
    package NPC_Map is new Ada.Containers.Hashed_Maps
      (Key_Type        => Unbounded_String,
       Element_Type    => NPC_Access,
-      Hash            => String_Sum_Hash,
+      Hash            => Hash,
       Equivalent_Keys => "=");
    
    function Make return NPC_Access is abstract;
